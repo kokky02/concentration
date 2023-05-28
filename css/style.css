@@ -10,6 +10,7 @@ body {
      align-items: center;
      min-height: 100vh;
      background: url('/image/background.jpg') no-repeat;
+     background-color: rgb(61, 61, 61);
      background-size: cover;
      background-position: center;
      
