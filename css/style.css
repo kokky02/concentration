@@ -30,11 +30,14 @@ body {
      background: none;
      cursor: pointer;
      user-select: none;
+     text-decoration: none;
    }
 
 .show-button:hover {
      width: 20px;
      height: 20px;
+     user-select: none;
+     text-decoration: none;
 }
    
 .timer-container {
