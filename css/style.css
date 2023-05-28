@@ -29,6 +29,7 @@ body {
      border: 1px solid white;
      background: none;
      cursor: pointer;
+     user-select: none;
    }
 
 .show-button:hover {
