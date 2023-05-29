@@ -23,19 +23,23 @@ body {
    
 .show-button {
      display: block;
-     width: 15px;
-     height: 15px;
+     width: 16px;
+     height: 16px;
      border-radius: 50px;
      border: 1px solid white;
      background: none;
      cursor: pointer;
      user-select: none;
      text-decoration: none;
+     position: fixed;
+     top: 64.5%;
+     left: 48.5%;
    }
 
 .show-button:hover {
-     width: 20px;
-     height: 20px;
+     width: 23px;
+     height: 23px;
+     border: 2px solid white;
      user-select: none;
      text-decoration: none;
 }
@@ -58,7 +62,7 @@ body {
      padding: 24px 32px;
      border-radius: 15px;
      background: transparent;
-     backdrop-filter: blur(20px);
+     backdrop-filter: blur(10px);
      border: 2px solid rgba(255, 255, 255, .5);
      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -75,7 +79,7 @@ body {
      border-radius: 50%;
      border: none;
      color: white;
-     background: #8208e6;
+     background: #1e222b;
      cursor: pointer;
 }
 
@@ -85,7 +89,7 @@ body {
 }
 
 .timer__btn--stop {
-     background: #ff0256;
+     background: #ff0202;
 }
 
 
@@ -104,7 +108,7 @@ body {
    
    .timer-close:before {
 	font-size: 24px;
-	color: rgb(158, 162, 164);
+	color: rgb(128, 130, 131);
 	content: "\2715";
    }
 
