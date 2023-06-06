@@ -16,6 +16,3 @@ showTimerButton.addEventListener('click', () => {
 })
 
 const timer = new Timer(timerContainer)
-
-// Close the timer when the timer-close button is clicked
-
