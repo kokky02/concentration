@@ -85,13 +85,25 @@
      cursor: pointer;
 }
 
+.timer__btn:hover {
+     background: #343b4a;
+}
+
+
 .timer__btn--start {
      background: #00b84c;
+}
 
+.timer__btn--start:hover {
+     background: #02953f;
 }
 
 .timer__btn--stop {
      background: #ff0202;
+}
+
+.timer__btn--stop:hover {
+     background: #9d0101;
 }
 
 
@@ -99,8 +111,10 @@
      color: black;
 }
 
+
 .timer-close {
 	background: transparent;
+     color: rgb(128, 130, 131);
 	border: 0;
 	position: absolute;
 	right: 4px;
@@ -108,6 +122,10 @@
 	cursor: pointer;
    }
    
+   .timer-close:hover {
+     color: rgb(255, 10, 10);
+   }
+
    .timer-close:before {
 	font-size: 24px;
 	color: rgb(128, 130, 131);

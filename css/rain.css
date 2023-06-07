@@ -61,15 +61,23 @@
      top: 1px;
      right: 5%
    }
+
+   .close-button:hover {
+     color: #646363;
+   }
    
    .play-button {
      margin-bottom: 10px;
-     background: none;
+     border-radius: 50%;
+     width: 35px;
+     height: 35px;
      outline: none;
      border: none;
      color: #fff;
-     height: 20px;
+     cursor: pointer;
    }
    
-
+.play-button:hover {
+     color: #777575;
+}
 
