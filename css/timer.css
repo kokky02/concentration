@@ -1,5 +1,6 @@
 #timerContainer {
      display: none;
+     z-index: 999;
    }
    
 .show-button {
@@ -13,8 +14,9 @@
      user-select: none;
      text-decoration: none;
      position: fixed;
-     top: 64.5%;
-     left: 48.5%;
+     top: 67.5%;
+     left: 49%;
+     z-index: 999;
    }
 
 .show-button:hover {
@@ -37,7 +39,6 @@
 
      font-size: 16px;
      font-family: inherit;
-     
    }
 .show-button:hover #tooltip{
      display: flex;
@@ -106,15 +107,8 @@
      background: #9d0101;
 }
 
-
-.timer-close {
-     color: black;
-}
-
-
 .timer-close {
 	background: transparent;
-     color: rgb(128, 130, 131);
 	border: 0;
 	position: absolute;
 	right: 4px;
@@ -122,10 +116,6 @@
 	cursor: pointer;
    }
    
-   .timer-close:hover {
-     color: rgb(255, 10, 10);
-   }
-
    .timer-close:before {
 	font-size: 24px;
 	color: rgb(128, 130, 131);

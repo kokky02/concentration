@@ -14,32 +14,39 @@
      <link rel="icon" href="image/relaxation.png" type="image/icon">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,200,0,0" />
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <title>Countdown Timer</title>
 </head>
 <body>
+          <!--Rain animation-->
+     <div class="back-row-toggle splat-toggle">
+          <div class="rain front-row"></div>
+          <div class="rain back-row"></div>
+        </div>
+       
+          <!--Timer button  -->
      <button id="showTimerButton" class="show-button">
           <div id="tooltip">Timer</div>
      </button>
      <div class="timer timer-container" id="timerContainer"></div>
 
+          <!-- Rain button -->
      <button id="showRain" class="show-button-rain">
-          <div id="tooltip">Rain</div>
+          <div id="tooltip2">Rain</div>
      </button>
         
         <div id="rainModal" class="modal">
           <div class="modal-content">
-            <span id="closeButton" class="close-button">&times;</span>
+            <span id="closeButton" class="timer-close"></span>
             <button id="playButton" class="material-symbols-outlined play-button timer__btn--start">
                play_pause</button>
             <input type="range" id="volumeSlider" min="0" max="100" value="100" step="1">
           </div>
-        </div>
-        
-      
-    
-     
+        </div>    
 
-     <script src="js/script.js" type="module"></script>
-     <script src="js/rain.js"></script>
+
+        
+        <script src="js/script.js" type="module"></script>
+        <script src="js/rain.js"></script> 
 </body>
 </html>
