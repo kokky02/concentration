@@ -1,0 +1,118 @@
+#timerContainer {
+     display: none;
+   }
+   
+.show-button {
+     display: block;
+     width: 16px;
+     height: 16px;
+     border-radius: 50px;
+     border: 1px solid white;
+     background: none;
+     cursor: pointer;
+     user-select: none;
+     text-decoration: none;
+     position: fixed;
+     top: 64.5%;
+     left: 48.5%;
+   }
+
+.show-button:hover {
+     width: 23px;
+     height: 23px;
+     border: 2px solid white;
+     user-select: none;
+     text-decoration: none;
+}
+
+#tooltip{
+     display: none;
+     border: 2px solid rgba(122, 166, 203, 255);
+     border-radius: 10px;
+     background: rgba(22, 41, 56, 0.99);
+     color: #fff;
+     margin-top: 22px;
+     height: 36px;
+     width: 77px;
+
+     font-size: 16px;
+     font-family: inherit;
+     
+   }
+.show-button:hover #tooltip{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+.timer-container {
+     position: relative;
+   }
+   
+.close-button {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+   }
+
+
+.timer {
+     font-family: sans-serif;
+     display: inline-block;
+     padding: 24px 32px;
+     border-radius: 15px;
+     background: transparent;
+     backdrop-filter: blur(10px);
+     border: 2px solid rgba(255, 255, 255, .5);
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+     top: 235px;
+}
+
+.timer__part {
+     font-size: 36px;
+     font-weight: bold;
+}
+
+.timer__btn {
+     width: 50px;
+     height: 50px;
+     margin-left: 16px;
+     border-radius: 50%;
+     border: none;
+     color: white;
+     background: #1e222b;
+     cursor: pointer;
+}
+
+.timer__btn--start {
+     background: #00b84c;
+
+}
+
+.timer__btn--stop {
+     background: #ff0202;
+}
+
+
+.timer-close {
+     color: black;
+}
+
+.timer-close {
+	background: transparent;
+	border: 0;
+	position: absolute;
+	right: 4px;
+	top: -5px;
+	cursor: pointer;
+   }
+   
+   .timer-close:before {
+	font-size: 24px;
+	color: rgb(128, 130, 131);
+	content: "\2715";
+   }
+
+
+
