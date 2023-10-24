@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
   let rainButton = $('#showRain')
   let modal = $('#rainModal')
   let playButton = $('#playButton')
@@ -10,17 +10,17 @@ $(document).ready(function() {
 
   audioRain.loop = true // Nastavení opakování přehrávání
 
-  rainButton.on('click', function() {
+  rainButton.on('click',() => {
     modal.css('display', 'block')
     rainButton.css('display', 'none')
   })
 
-  closeButton.on('click', function() {
+  closeButton.on('click',() => {
     modal.css('display', 'none')
     rainButton.css('display', 'block')
   })
 
-  playButton.on('click', function() {
+  playButton.on('click',() => {
     if (isPlaying) {
       audioRain.pause()
       isPlaying = false
@@ -32,14 +32,14 @@ $(document).ready(function() {
     }
   });
 
-  volumeSlider.on('input', function() {
+  volumeSlider.on('input',() => {
     let volume = parseFloat(volumeSlider.val()) / 100
     audioRain.volume = volume
   });
 
   // rain Graphic
 
-  let makeItRain = function() {
+  let makeItRain =() => {
     $('.rain').empty()
 
     let increment = 0
@@ -58,19 +58,19 @@ $(document).ready(function() {
     $('.rain.back-row').append(backDrops)
   }
 
-  $('.splat-toggle.toggle').on('click', function() {
+  $('.splat-toggle.toggle').on('click',() => {
     $('body').toggleClass('splat-toggle')
     $('.splat-toggle.toggle').toggleClass('active')
     makeItRain()
   })
 
-  $('.back-row-toggle.toggle').on('click', function() {
+  $('.back-row-toggle.toggle').on('click',() => {
     $('body').toggleClass('back-row-toggle')
     $('.back-row-toggle.toggle').toggleClass('active')
     makeItRain();
   })
 
-  $('.single-toggle.toggle').on('click', function() {
+  $('.single-toggle.toggle').on('click',() => {
     $('body').toggleClass('single-toggle')
     $('.single-toggle.toggle').toggleClass('active')
     makeItRain()
@@ -78,3 +78,6 @@ $(document).ready(function() {
 
   makeItRain()
 });
+
+
+
